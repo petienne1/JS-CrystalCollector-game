@@ -27,7 +27,7 @@
   <p>User Score: <span id="user-score"></span></p>
 
   <!-- This is where we will post the guessesSoFar. Initially nothing is shown. -->
-  <p>Target Score: <span id="target-score"></span></p>
+  <p>Target Number: <span id="target-number"></span></p>
   <br>
   <img src="assets/images/ruby.jpeg" id="ruby"/>
   <img src="assets/images/blueCrystal.jpeg" id="blue"/>
@@ -36,7 +36,41 @@
 
 
   <!-- Link to JavaScript game.js -->
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+  <!-- <script type="text/javascript" src="assets/javascript/game2.js"></script> -->
+  <script>
+    $(document).ready(function() {
+
+      var wins = 0;
+      var losses = 0;
+      var userScore = 0;
+      var targetNumber = 0;
+
+      var crystal = {
+        blue:
+        {
+          name: "Blue",
+          value: 0
+        },
+        clear:
+        {
+          name: "Clear",
+          value: 0
+        },
+        darkBlue:
+        {
+          name: "Dark Blue",
+          value: 0
+        },
+        ruby:
+        {
+          name: "Ruby",
+          value: 0
+        }
+      };
+
+
+    });
+  </script>
 
 </body>
 
